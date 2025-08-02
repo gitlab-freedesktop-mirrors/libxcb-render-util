@@ -6,17 +6,17 @@
  * the rights to use, copy, modify, merge, publish, distribute, sublicense,
  * and/or sell copies of the Software, and to permit persons to whom the
  * Software is furnished to do so, subject to the following conditions:
- * 
+ *
  * The above copyright notice and this permission notice shall be included in
  * all copies or substantial portions of the Software.
- * 
+ *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
  * AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
  * ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- * 
+ *
  * Except as contained in this notice, the names of the authors or their
  * institutions shall not be used in advertising or otherwise to promote the
  * sale, use or other dealings in this Software without prior written
@@ -49,7 +49,7 @@ static struct {
  */
 
 #define DEPTH_MASK(d)	(1U << ((d) - 1))
-    
+
 /*
  * Render requires support for depth 1, 4, 8, 24 and 32 pixmaps
  */
@@ -185,7 +185,7 @@ find_display (xcb_connection_t *c)
     /*
      * see if this was the most recently accessed display
      */
-    if ((info = connections.cur) && info->c == c) 
+    if ((info = connections.cur) && info->c == c)
         return info;
 
     pthread_mutex_lock(&connections.lock);

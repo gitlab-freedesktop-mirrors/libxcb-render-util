@@ -122,7 +122,7 @@ xcb_render_util_find_standard_format (const xcb_render_query_pict_formats_reply_
 		},
 		0,			    /* colormap */
 	    },
-	    XCB_PICT_FORMAT_TYPE | 
+	    XCB_PICT_FORMAT_TYPE |
 	    XCB_PICT_FORMAT_DEPTH |
 	    XCB_PICT_FORMAT_RED |
 	    XCB_PICT_FORMAT_RED_MASK |
@@ -152,7 +152,7 @@ xcb_render_util_find_standard_format (const xcb_render_query_pict_formats_reply_
 		},
 		0,			    /* colormap */
 	    },
-	    XCB_PICT_FORMAT_TYPE | 
+	    XCB_PICT_FORMAT_TYPE |
 	    XCB_PICT_FORMAT_DEPTH |
 	    XCB_PICT_FORMAT_RED |
 	    XCB_PICT_FORMAT_RED_MASK |
@@ -181,7 +181,7 @@ xcb_render_util_find_standard_format (const xcb_render_query_pict_formats_reply_
 		},
 		0,			    /* colormap */
 	    },
-	    XCB_PICT_FORMAT_TYPE | 
+	    XCB_PICT_FORMAT_TYPE |
 	    XCB_PICT_FORMAT_DEPTH |
 	    XCB_PICT_FORMAT_RED_MASK |
 	    XCB_PICT_FORMAT_GREEN_MASK |
@@ -208,7 +208,7 @@ xcb_render_util_find_standard_format (const xcb_render_query_pict_formats_reply_
 		},
 		0,			    /* colormap */
 	    },
-	    XCB_PICT_FORMAT_TYPE | 
+	    XCB_PICT_FORMAT_TYPE |
 	    XCB_PICT_FORMAT_DEPTH |
 	    XCB_PICT_FORMAT_RED_MASK |
 	    XCB_PICT_FORMAT_GREEN_MASK |
@@ -235,7 +235,7 @@ xcb_render_util_find_standard_format (const xcb_render_query_pict_formats_reply_
 		},
 		0,			    /* colormap */
 	    },
-	    XCB_PICT_FORMAT_TYPE | 
+	    XCB_PICT_FORMAT_TYPE |
 	    XCB_PICT_FORMAT_DEPTH |
 	    XCB_PICT_FORMAT_RED_MASK |
 	    XCB_PICT_FORMAT_GREEN_MASK |
@@ -248,7 +248,7 @@ xcb_render_util_find_standard_format (const xcb_render_query_pict_formats_reply_
     if (format < 0 || format >= sizeof(standardFormats) / sizeof(*standardFormats))
 	return 0;
 
-    return xcb_render_util_find_format (formats, 
+    return xcb_render_util_find_format (formats,
 				    standardFormats[format].mask,
 				    &standardFormats[format].templ,
 				    0);
